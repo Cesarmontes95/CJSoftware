@@ -1,0 +1,742 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: yellow;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+.navegacion {
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    top: 0;
+    z-index: 999;
+    transition: 0.3s linear;
+}
+
+.ancho-interno {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.navegacion .ancho-interno {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #000;
+    width: 50px;
+    height: 40px;
+    font-size: 40px;
+    border: none;
+}
+
+.menu-alterno {
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
+.menu-alterno span {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+    transition: 0.3s linear;
+}
+
+.navegacion-menu a {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .2s linear;
+}
+
+.navegacion-menu a:hover {
+    background: #48dbfb;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.sticky {
+    background-color: rgb(141, 39, 209);
+    padding: 18px 0;
+}
+
+.sticky .navegacion-menu a{
+    color: #111;
+}
+
+.sticky .menu-alterno span {
+    background-color: #111;
+}
+
+#inicio {
+    height: 100vh;
+    min-height: 500px;
+    background-color: #004bff;
+    background-image: url('../sources/undraw-gaming.png');
+    background-size: cover;
+    background-position:initial;
+    background-attachment: fixed;
+}
+
+#inicio .ancho-interno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#inicio .contenido {
+    width: 100%;
+    color: #fff;
+}
+
+#inicio .contenido h1 {
+    font-size: 60px;
+    margin-bottom: 60px;
+    color: #000;
+    background: linear-gradient(to right, rgb(39, 146, 247) , rgb(141, 39, 209));
+}
+
+#inicio .contenido h1::after {
+    content: "Cesar Montes";
+    animation: textoanimado 7s linear infinite;
+}
+
+@keyframes textoanimado {
+    25% {
+        content: "Un Desarrollador";
+    }
+    50% {
+        content: "Diseñador web";
+    }
+    75% {
+        content: "muy dedicado";
+    }
+}
+
+.div a {
+    color: #000;
+    font-size: 22px;
+    margin: 0 20px;
+    transition: .3s linear;
+}
+
+.div a:hover {
+    font-size: 30px;
+    color: rgb(141, 39, 209);
+}
+
+#inicio .botones {
+    margin-top: 60px;
+}
+
+#inicio .botones a{
+    display: inline-block;
+    margin: 15px 30px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    border: 3px solid #48dbfb;
+    padding: 14px 0;
+    border-radius: 6px;
+    transition: .2s linear;
+}
+
+#inicio .botones a:hover{
+    border: 1px solid rgb(141, 39, 209);
+    background-color: #48dbfb;
+    color: #fff;
+}
+
+#inicio .botones a:nth-child(1) {
+    border: 1px solid #48dbfb;
+    background-color: rgb(141, 39, 209);
+    color: #fff;
+}
+
+section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.seccion-titulo {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+    font-size: 26px;
+    padding-bottom: 20px;
+    color: #111;
+}
+
+.seccion-titulo::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #111;
+    bottom: 0;
+    left: calc(50% - 40px);
+}
+
+.seccion-titulo::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 10px;
+    background-color: #48dbfb;
+    border: 4px solid #f1f1f1;
+    left: calc(50% - 12px);
+    bottom: -7px;
+}
+
+.acerca-contenido {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.acerca-img {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+
+.acerca-texto {
+    flex: 1;
+}
+
+.acerca-texto h3{
+    margin: 10px 0;
+    color: #444;
+    font-size: 16px;
+}
+
+.acerca-texto h3 span:nth-child(1):after , .acerca-texto h3 span:nth-child(2):after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #444;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 14px;
+}
+
+.acerca-texto p{
+    font-size: 17px;
+    text-align: justify;
+    line-height: 26px;
+    margin-top: 20px;
+}
+
+.habilidades {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.habilidad {
+    width: calc(50% - 20px);
+    margin: 15px 0;
+}
+
+.info-habilidad{
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-habilidad {
+    height: 3px;
+    background-color: #ddd;
+    margin-top: 14px;
+    position: relative;
+}
+
+.barra-habilidad::after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    background-color: #48dbfb;
+    bottom: 0;
+}
+
+.html:after {
+    width: 80%;
+}
+
+.css:after {
+    width: 50%;
+}
+
+.js:after {
+    width: 20%;
+}
+
+.mysql:after {
+    width: 50%;
+}
+
+.python:after {
+    width: 40%;
+}
+
+.react:after {
+    width: 20%;
+}
+
+.vs-code:after {
+    width: 80%;
+}
+
+.php:after {
+    width: 10%;
+}
+
+section.oscuro {
+    background-color: #353b48;
+}
+
+section.oscuro .seccion-titulo {
+    color: #f1f1f1;
+} 
+
+section.oscuro .seccion-titulo::before {
+    background-color: #f1f1f1;
+}
+
+section.oscuro .seccion-titulo::after {
+    border: 4px solid #353b48;
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.servicio {
+    width: calc(33% - 20px);
+    text-align: center;
+    bottom: 1px solid #48dbfb;
+    border-radius: 6px;
+    margin: 20px 0;
+    padding: 40px 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.servicio .icon {
+    color: #48dbfb;
+    font-size: 40px;
+    margin-bottom: 20px;
+    transition: .3s linear;
+}
+
+.servicio h4 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.servicio:hover {
+    background-color: rgb(141, 39, 209);
+}
+
+.servicio:hover .icon {
+    color: #000;
+}
+
+.servicio:hover p {
+    color: #000;
+}
+
+.linea-tiempo , .juegos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bloque {
+    width: calc(50% - 20px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 30px;
+    position: relative;
+}
+
+.bloque::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 120%;
+    background-color: #ddd;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bloque::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #48dbfb;
+    left: -28px;
+    top: 30px;
+    border-radius: 50%;
+}
+
+.bloque h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.bloque p {
+    font-size: 15px;
+    color: #444;
+}
+
+.juego {
+    width: calc(33% - 10px);
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.juego img{
+    width: 100%;
+    height: 100%;
+    transition: .4s linear;
+}
+
+.juego:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #48dbfb;
+    transition: .2s linear;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.juego .info {
+    position: absolute;
+    z-index: 2;
+    bottom: 40px;
+    left: 40px;
+    color: #fff;
+    transition: .4s linear;
+    opacity: 0;
+}
+
+.juego:hover img {
+    transform: scale(1.6) rotate(25deg);
+}
+
+.juego:hover::before , .juego:hover .info{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.info-contacto {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info-contacto .item {
+    width: calc(33% - 20px);
+    height: 160px;
+    background-color: #353b48;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.info-contacto i{
+    display: block;
+    font-size: 40px;
+    line-height: 120px;
+    height: 100px;
+}
+
+.info-contacto .item:hover {
+    background-color: #48dbfb;
+}
+
+.contacto-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacto-form input, .contacto-form textarea{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    background-color: #353b48;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.zona-nombre , .zona-correo{
+    max-width: calc(50% - 10px);
+}
+
+.zona-msg{
+    min-height: 200px;
+    resize: vertical;
+}
+
+.contacto-form .btn{
+    width: 180px;
+    background-color: transparent;
+    color: #353b48;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #353b48;
+    padding: 0;
+    margin-left: auto;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.contacto-form .btn:hover {
+    background-color: #48dbfb;
+    color: #353b48;
+}
+
+footer {
+    background-image: url('../sources/resident-evil.jpg');
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.copyright {
+    margin-bottom: 60px;
+    font-size: 15px;
+}
+
+.copyright a{
+    font-size: 16px;
+    color: #48dbfb;
+    font-weight: 500;
+}
+
+.arriba {
+    position: fixed;
+    z-index: 999;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(141, 39, 209);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    display: none;
+}
+
+.arriba:hover {
+    transform: scale(1.2);
+}
+
+.sm a{
+    font-size: 22px;
+    color: #fff;
+    margin: 0 30px;
+}
+
+.sm a:hover {
+    color: #48dbfb;
+    transition: .9s;
+    transform: scale(2) rotate(360deg);
+}
+
+@media screen and (max-width: 980px){
+    .menu-alterno {
+        display: block;
+    }
+
+    .navegacion-menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #ddd;
+        top: 0;
+        right: -100%;
+        max-width: 400px;
+        padding: 80px 50px;
+        transition: .3s linear;
+    }
+
+    .navegacion-menu a{
+        display: block;
+        font-size: 30px;
+        margin: 30px 0;
+    }
+
+    .sticky .navegacion-menu {
+        background-color: #f1f1f1;
+    }
+
+    .navegacion-menu.active {
+        right: 0;
+    }
+
+    .menu-alterno.active span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 4px;
+    }
+
+    .menu-alterno.active span:nth-child(2){
+        opacity: 0;
+    }
+
+    .menu-alterno.active span:nth-child(3){
+        transform: rotate(45deg);
+        bottom: 14px;
+    }
+
+    .ancho-interno {
+        max-width: 800px;
+    }
+
+    .acerca-img {
+        margin: 0 auto 60px;
+    }
+
+    .acerca-texto {
+        flex: 100%;
+        text-align: center;
+    }
+
+    .servicio {
+        width: calc(50% - 20px);
+    }
+
+    .bloque {
+        width: calc(47% - 20px);
+        margin-left: auto;
+    }
+
+    .juego {
+        width: calc(50% - 10px);
+    }
+
+    .info-contacto .item {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ancho-interno {
+        padding: 0 20px;
+    }
+
+    .habilidad {
+        width: 100%;
+    }
+
+    .servicio {
+        width: 100%;
+    }
+
+    .juego {
+        width: 100%;
+    }
+
+    .zona-nombre , .zona-correo {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navegacion-menu {
+        width: 80%;
+        height: 80%;
+    }
+    
+    .navegacion-menu a{
+        font-size: 20px;
+    }
+
+    #inicio .contenido h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .div a{
+        margin-left: 0;
+        font-size: 22px;
+    }
+
+    .acerca-texto h3 {
+        font-size: 14px;
+    }
+    
+    .habilidad {
+        width: 100%;
+    }
+
+    .servicio {
+        width: 100%;
+    }
+
+    .bloque {
+        width: calc(100% - 10px);
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+
+    .sm a{
+        margin-left: 0;
+    }
+}

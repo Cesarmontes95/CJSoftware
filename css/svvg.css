@@ -1,0 +1,363 @@
+/* FUENTES */
+@font-face{
+    font-family: "futura_m";
+    src: url(./dist/font/Futura-Med.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "futura_b";
+    src: url(./dist/font/Futura-Bol.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.clear{
+    float: none;
+    clear: both;
+}
+body{
+    background: black;
+}
+
+
+/* Bordes del div */
+.bordered.square{
+    color: white;
+    margin: 0px auto;
+    height: 80vh;
+    width: 85%;
+    padding: 15px;
+   
+  }
+
+  .bordered {
+    background-color: transparent;
+    background-image:   linear-gradient(to right, rgb(255, 255, 255) 50px, transparent 30px), 
+                        linear-gradient(to right, rgb(255, 255, 255) 50px, transparent 30px), 
+                        linear-gradient(to bottom, rgb(255, 255, 255) 50px, transparent 30px), 
+                        linear-gradient(to bottom, rgb(255, 255, 255) 50px, transparent 30px);
+    background-size: 97% 2px, 97% 2px, 2px 95%, 2px 95%;
+    background-position: -15px 0%, -15px 100%, 0% -15px, 100% -15px;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  }
+/* Fin esquinas del div  */
+
+#section{
+    overflow: hidden;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 2;
+}
+
+.c1{
+    width: 210px;
+    height: 210px;
+    /* background: rgba(255, 255, 0, .9); */
+    position: absolute;
+    border-radius: 100%;
+    border-bottom: 5%;
+    top: 260px;
+    left: 510px;
+    overflow: hidden;
+}
+
+#fp-nav {
+    margin-top: -3vh;
+    width: -40px;
+    transform: rotate(360deg);   
+}
+
+#fp-nav ul li {
+    height: 2px;
+    margin: 0 0 40px;
+    
+}
+
+#fp-nav ul li a{
+    background: #fff;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    right: -100x;
+}
+
+#fp-nav ul li a span {
+    display: none;
+}
+
+
+#fp-nav ul li:last-child {
+    
+    margin-bottom: 0
+}
+#fp-nav ul li .active {
+    margin-left: -10px;
+    width: 100%;
+}
+
+
+   
+.c1 .a1{
+    width: 100%;
+    background: #000;
+    height: 2px;
+   
+    margin-top: 75px;
+}
+
+.c1 .a2{
+    width: 100%;
+    background: #000;
+    height: 4px;
+    
+    margin-top: 15px;
+}
+
+.c1 .a3{
+    width: 100%;
+    background: #000;
+    height: 6px;
+    
+    margin-top: 15px;
+}
+.c1 .a4{
+    width: 100%;
+    background: #000;
+    height: 8px;  
+    background: #000;
+    margin-top: 15px;
+}
+
+.c1 .a5{
+    width: 100%;
+    background: #000;
+    height: 10px;  
+    background: #000;
+    margin-top: 15px;
+}
+
+.c1 .a6{
+    width: 100%;
+    background: #000;
+    height: 12px;  
+    background: #000;
+    margin-top: 15px;
+}
+
+#section .contenidos{
+    margin-left: 20px;
+}
+#section .contenidos .nombre .mas{
+    margin-top: 18%;
+    font-family: "futura_b";
+    font-size: 35px;
+    letter-spacing: 3px;
+    line-height: 50px;   
+}
+#section .contenidos .nombre .menos{
+    position: absolute;
+    margin-top: -50px;
+    font-size: 15px;
+    color: #bbb;
+    font-family: "futura_m";
+}
+
+#section .contenidos .description{
+    margin-top: 25px;
+    float: left;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+}
+#section .contenidos .description hr{
+    border: 1px solid white;
+    margin-top: 7px;
+}
+#section .contenidos .description p{
+    font-family: "futura_m";
+    margin-left: 10px;
+    color: #ccc;
+}
+#section .contenidos .btn{
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    background: rgba(255, 0, 0, 0.8);
+    width: 125px;
+    border-radius: 30px;
+    height: 25px;
+    transition: all 200ms;
+}
+
+#section .contenidos .btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#section .contenidos .btn:hover{
+    background-color: transparent;
+    border: 2px solid rgba(255, 0, 0, 0.8);
+}
+
+/* SECTION 2*/
+
+
+.col-text {
+    height:20em;
+    color: white;
+  }
+  .grid-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    flex-direction: row; 
+    -webkit-flex-direction: row;
+    
+  }
+  .col {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .col-left {
+    -webkit-box-ordinal-group:-1;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  .col-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Aligner-item {
+    width: 60%;
+  }
+  .col-image {
+    background-size: cover;
+    background-position:center center;
+  }
+  
+  @media (max-width: 640px) {
+    .grid-flex {
+      height: 40em;
+      display: -webkit-flex;
+      -webkit-flex-direction: column;
+      flex-direction: column; 
+     }
+    .col {
+      order:vertical;
+    }
+    .col-left {
+      -webkit-box-ordinal-group:0;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+    }
+    .col-text div p {
+      padding: 1em;
+    }
+    .Aligner-item {
+      width: 90%;
+    }
+  }
+  
+  
+  
+
+
+/* FIN SECTION 2*/
+/* Cambios para Hora del dia */
+.sectionN{
+    background: linear-gradient(
+        180deg, rgba(255,255,255,0) 80%, rgba(0, 0, 0, 8) 100%, 
+        rgba(0, 0, 0, .2)
+      ), url(https://i.imgur.com/upIMzAo.png);
+}
+.sectionD{
+    background: linear-gradient(
+        180deg, rgba(255,255,255,0) 80%, rgba(0, 0, 0, 8) 100%, 
+        rgba(0, 0, 0, .2)
+      ), url(./dist/img/fondoD.png);
+}
+.c1Noche{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(251,255,97,0.84) 100%);
+    box-shadow: 0px 0px 100px 5px rgba(255, 255, 255, .5);
+}
+
+.c1Dia{
+    background: rgb(255,240,0);
+    background: linear-gradient(180deg, rgba(255,240,0,1) 0%, rgba(243,12,186,1) 100%);
+    box-shadow: 0px 0px 100px 5px rgba(255, 255, 0, 0.8);
+}
+
+/* Fin Cambios para Hora del dia */
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 615px){
+    #section .contenidos{
+        margin-top: 20%;
+        margin-left: 15px;
+    }
+    #section .contenidos .btn{
+        margin-top: 25px;
+    }
+    .bordered.square{
+        width: 85%;
+        padding: 15px;
+    }
+    .c1{
+          top: 195px;
+    }
+}
+@media (max-width: 440px){
+    #section .contenidos{
+        margin-top: 40%;
+        margin-left: 15px;
+        
+    }
+    .c1{
+        width: 190px;
+        height: 190px;
+        left: 200px;
+        z-index: 1;
+    }
+}
+@media (max-height: 395){
+    .bordered.square{
+        height: 70vh;
+    }
+    .c1{
+        margin-top: 115px;
+  }
+}
+@media (max-height: 440){
+    .c1{
+        margin-top: 95px;
+  }
+}
+
+
+
+
+
+
+
+  
