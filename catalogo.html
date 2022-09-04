@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="shortcut icon" href="../assets/img/revista.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/catalogo.css">
+    <!--Box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav bg-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bxs-grid"></i>
+            </div>
+            <a href="javascript: history.go(-1)" class="nav__logo">CJ Software</a>
+
+            <div class="">
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">home</a></li>
+                    <li class="nav__item"><a href="#destacado" class="nav__link">destacado</a></li>
+                    <li class="nav__item"><a href="#nuevos" class="nav__link">nuevo</a></li>
+                    <li class="nav__item"><a href="#promo" class="nav__link">Promociones</a></li>
+                    <li class="nav__item"><a href="#premium" class="nav__link">Premium</a></li>
+                    <li class="nav__item"><a href="#footer" class="nav__link">Contactos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home" id="home">
+            <h2 class="section-title">BIENVENIDO/A <br>CJ-Shopping</h2>
+            <div class="home__container bd-grid">
+                <div class="home__portafolio">
+                    <div class="home__shape"></div>
+                    <img src="../assets/img/gato.jpeg" width="500" height="300" alt="Gatito" class="home-img">
+                </div>
+
+                <div class="home__data">
+                    <span class="home__new">Nuevo!</span>
+                    <h1 class="home__title">Logo Gatito <br> $200</h1>
+                    <p class="home__description">Explora el nuevo apartado de plantillas!</p>
+                    <a href="#" class="button">Descubre</a>
+                </div>
+            </div>
+        </section>
+
+        <!--DESTACADO-->
+
+        <section class="section destacado" id="destacado">
+            <h2 class="section-title">DESTACADO</h2>
+
+            <div class="destacado__container bdgrid">
+                <article class="portafolio">
+                    <div class="portafolio__sale">Venta</div>
+                    <img src="../assets/img/portafolio.png" alt="" class="portafolio__img">
+                    <span class="portafolio__name">Portafolio Neon</span>
+                    <span class="portafolio__precio">$1200</span>
+                    <a href="" class="button-light">Añadir al carrito <i class="bx bx-right-arrow-alt button-icon"></i></a>
+                </article>
+
+                <article class="portafolio">
+                    <div class="portafolio__sale">Venta</div>
+                    <img src="../assets/img/portfolio.png" alt="" class="portafolio__img">
+                    <span class="portafolio__name">Portafolio Gaming</span>
+                    <span class="portafolio__precio">$1500</span>
+                    <a href="" class="button-light">Añadir al carrito <i class="bx bx-right-arrow-alt button-icon"></i></a>
+                </article>
+
+                <article class="portafolio">
+                    <div class="portafolio__sale">Venta</div>
+                    <img src="../assets/img/luna.png" alt="" class="portafolio__img">
+                    <span class="portafolio__name">Portafolio SVG</span>
+                    <span class="portafolio__precio">$2000</span>
+                    <a href="" class="button-light">Añadir al carrito<i class="bx bx-right-arrow-alt button-icon"></i></a>
+                </article>
+            </div>
+        </section>
+
+        <!--Plantillas-->
+        <section class="plantilla section" id="nuevos">
+            <div class="plantilla__container bd-grid">
+                <h2 class="section-title">NUEVOS</h2>
+                <div class="plantilla__card">
+                    <div class="plantilla__data">
+                        <h3 class="plantilla__name">Sign In Nubecita</h3>
+                        <p class="plantilla__description">Registrate o loggeate junto con una amable y no tan amable nubecita</p>
+                        <a href="#" class="button-light">Comprar Ahora<i class="bx bx-right-arrow-alt button-icon"></i></a>
+                    </div>
+                    <img src="../assets/img/nubesita.png" alt="" class="plantilla__img">
+                </div>
+
+                <div class="plantilla__card">
+                    <div class="plantilla__data">
+                        <h3 class="plantilla__name">Reloj Analogo</h3>
+                        <p class="plantilla__description">Reloj analogo hecho con CSS3</p>
+                        <a href="#" class="button-light">Comprar Ahora<i class="bx bx-right-arrow-alt button-icon"></i></a>
+                    </div>
+                    <img src="../assets/img/reloj.png" alt="" class="plantilla__img">
+                </div>
+            </div>
+        </section>
+
+        <!--PROMO-->
+        <section class="promo section" id="promo">
+            <h2 class="section-title">PROMOCION LIMITADA!</h2>
+            <div class="promo__container bd-grid">
+                <div class="promo__data">
+                    <h3 class="promo__title">30% OFF</h3>
+                    <p class="promo__description">Red Social Nacional</p>
+                    <a href="#" class="button">Compra Ahora</a>
+                </div>
+                <img src="../assets/img/red.png" alt="" class="promo__img">
+            </div>
+
+            <div class="promo__container bd-grid">
+                <div class="promo__data">
+                    <h3 class="promo__title">65% OFF</h3>
+                    <p class="promo__description">Biografia personal</p>
+                    <a href="#" class="button">Compra Ahora</a>
+                </div>
+                <img src="../assets/img/inicio.png" alt="" class="promo__img">
+            </div>
+        </section>
+
+        <!--Customization-->
+        <section class="custom section" id="sitios">
+            <h2 class="section-title">Personalizaciones!</h2>
+
+            <div class="custom__container bd-grid">
+                <div class="custom__plantilla">
+                    <img src="../assets/img/billete-de-banco.png" alt="plantilla" class="custom__plantilla-img">
+                    <h3 class="custom__title">Personalizaciones</h3>
+                    <span class="custom__precio">Desde $300 en adelante</span>
+                    <a href="#" class="button-light">Ver mas<i class="bx bx-right-arrow-alt button-icon"></i></a>
+                </div>
+
+                <div class="custom__portafolio">
+                    <div class="custom__portafolio-card">
+                        <img src="../assets/img/1.png" alt="plantillas" class="custom__portafolio-img">
+                        <div class="custom__portafolio-overlay">
+                            <a href="#" class="button">Compra Ahora</a>
+                        </div>
+                    </div>
+                    <h2 class="section-title">Plantillas</h2>
+
+                    <div class="custom__portafolio-card">
+                        <img src="../assets/img/2.png" alt="plantillas" class="custom__portafolio-img">
+                        <div class="custom__portafolio-overlay">
+                            <a href="#" class="button">Compra Ahora</a>
+                        </div>
+                    </div>
+                    <h2 class="section-title">Paginas web</h2>
+
+                    <div class="custom__portafolio-card">
+                        <img src="../assets/img/3.png" alt="plantillas" class="custom__portafolio-img">
+                        <div class="custom__portafolio-overlay">
+                            <a href="#" class="button">Compra Ahora</a>
+                        </div>
+                    </div>
+                    <h2 class="section-title">Sistemas web</h2>
+                </div>
+            </div>
+        </section>
+
+        <!--SUBSCRIPCION-->
+        <section class="boletin section" id="premium">
+            <h2 class="section-title">PREMIUM</h2>
+            <div class="boletin__container bd-grid">
+                <div>
+                    <h3 class="boletin__title">Subscribete y obten <br> 10% Descuento</h3>
+                    <p class="boletin__description">Obten 10% de descuento en todos los productos</p>
+                </div>
+
+                <form action="" class="boletin__subscribe">
+                    <input type="text" placeholder="@gmail.com" class="boletin__input">
+                    <a href="#" class="button">Subscribete</a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer section" id="footer">
+        <h2 class="section-title">Acerca de</h2>
+        <div class="footer__container bd-grid">
+            <div class="footer__box">
+                <h3 class="footer__title">CJ Software</h3>
+                <p class="footer__description">Proximamente mucho mas...</p>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">Explora</h3>
+                <ul>
+                    <li><a href="#home" class="footer__link">Inicio</a></li>
+                    <li><a href="#destacado" class="footer__link">Destacado</a></li>
+                    <li><a href="#nuevos" class="footer__link">Nuevos</a></li>
+                    <li><a href="#promo" class="footer__link">Promociones</a></li>
+                    <li><a href="#premium" class="footer__link">Premium</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">Soporte</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Ayuda</a></li>
+                    <li><a href="#" class="footer__link">Customizacion</a></li>
+                    <li><a href="#" class="footer__link">Licencia</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <a href="https://facebook.com" target="_blank" class="footer__social"><i class="bx bxl-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank" class="footer__social"><i class="bx bxl-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" class="footer__social"><i class="bx bxl-twitter"></i></a>
+                <a href="https://google.com" target="_blank" class="footer__social"><i class="bx bxl-google"></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2022 CJ Software. Todos los derechos reservados</p>
+    </footer>
+    
+    <script src="../assets/js/catalogo.js"></script>
+</body>
+</html>
