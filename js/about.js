@@ -103,7 +103,7 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 var typed = new Typed(".typing",{
-    strings: ["Cesar Montes", "CJ Software"],
+    strings: ["Cesar Montes", "CJ Software", "Johann Roman"],
     typeSpeed: 120,
     backSpeed: 60,
     loop: true
