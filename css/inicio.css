@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-/*----- VARIABLES CSS Y SASS -----*/
-/*Varibles sass*/
+/*----- VARIABLES CSS-----*/
 /*Variables css*/
 /*Colores*/
 :root {
@@ -45,7 +44,7 @@
 body {
   margin: 3rem 0 0 0;
   font-family: var(--body-font);
-  background-color: var(--black-color);
+  background: linear-gradient(to right, #7300ff , #fff);
   color: var(--white-color);
   font-weight: 700;
   overflow: hidden;
@@ -72,10 +71,10 @@ img {
 
 /*----- LAYOUT -----*/
 .bd-grid {
-  max-width: 1200px;
-  margin-left: 1rem;
+  max-width: 2000px;
+  margin-left: 5px;
   margin-right: 1rem;
-  
+  background: linear-gradient(to right, #7300ff , #fff);
 }
 
 .l-header {
@@ -84,7 +83,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--black-color);
+  /*background-color: var(--black-color);*/
 }
 
 /*----- PAGES -----*/
@@ -101,9 +100,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 700;
+  color: var(--black-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 918px) {
 
   span{
     font-size: 30px;
@@ -158,12 +158,12 @@ img {
   height: 0.1875rem;
   left: 0.125rem;
   top: 2.125rem;
-  background-color: #fff;
+  background-color: #7300ff;
 }
 
 .nav__logo {
   font-size: var(--normal-font-size);
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
 .nav__toggle {
@@ -201,18 +201,24 @@ img {
   padding-left: 1.5rem;
   border-left: 5px solid var(--white-color);
   z-index: var(--z-tooltip);
+  margin-right: 500px;
+  padding-right: 1.5rem;
+  border-right: 5px solid var(--black-color);
 }
 
 .home__pressent {
   font-size: var(--small-font-size);
+  color: var(--black-color);
 }
 
 .home__title {
   font-size: var(--h1-font-size);
+  color: var(--black-color);
 }
 
 .home__skill {
   font-size: var(--h2-font-size);
+  color: var(--black-color);
 }
 
 .home__button {
@@ -222,12 +228,10 @@ img {
   color: var(--white-color);
   padding: .625rem 1rem;
   border-radius: .25rem;
-  background-image: --webkit-gradient(linear, left top, right top, from(var(--black-color)), to(var(--first-color)));
-  background-image: linear-gradient(to right, var(--black-color), var(--first-color));
 }
 
 .home__button:hover {
-  background-image: linear-gradient(to right, var(--first-color), var(--black-color));
+  background-image: var(--black-color);
 
 }
 
@@ -251,6 +255,7 @@ img {
 }
 
 .home__social-icon {
+  color: #fff;
   margin-bottom: 2rem;
   font-size: 1.33rem;
   cursor: pointer;
@@ -264,6 +269,7 @@ img {
   margin-bottom: 2rem;
   font-size: 1.33rem;
   cursor: pointer;
+  color: #fff;
 }
 
 .home__social-insta:hover{
@@ -364,7 +370,7 @@ img {
 }
 
 /*ANIMATE*/
-.overlay {
+/*.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -386,3 +392,4 @@ img {
   background-color: var(--first-color);
   left: 66.6%;
 }
+*/
