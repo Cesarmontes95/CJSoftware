@@ -52,7 +52,8 @@
     margin-left: -12px;
     color: #030005;
     text-transform: uppercase;
-    text-shadow: -1px -1px 0px #8400ff, 1px 1px 0px #ff005a;
+    text-shadow: -1px -1px 0px #0088ff, 1px 1px 0px #ffffff;
+    /*text-shadow: -1px -1px 0px #8400ff, 1px 1px 0px #ff005a;*/
     letter-spacing: -20px;
   }
   
@@ -76,7 +77,7 @@
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
     text-transform: uppercase;
-    color: #ff005a;
+    color: #0088ff;
     text-decoration: none;
     border: 2px solid;
     background: transparent;
@@ -88,7 +89,7 @@
   }
   
   .noc a:hover {
-    color: #8400ff;
+    color: #fff;
   }
   
   @media only screen and (max-width: 767px) {
