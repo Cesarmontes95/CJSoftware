@@ -161,14 +161,12 @@ body.light-theme {
   background-color: var(--title-color);
 }
 
-.light-theme .home__social-link,
 .light-theme .home__scroll,
 .light-theme .button,
 .light-theme .button:hover,
 .light-theme .active-work,
-.light-theme .footer__title,
-.light-theme .footer__link,
-.light-theme ,.footer__copy{
+.light-theme ,.footer__copy,
+.typing{
   color: var(--title-color);
 }
 
