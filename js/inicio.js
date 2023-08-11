@@ -15,7 +15,7 @@ showMenu('nav-toggle','nav-menu')
 /*TYPING*/
 
 var typed = new Typed(".typing", {
-    strings: ["César", "Catalyze", "Johann", "Jorge", "Johnny"],
+    strings: ["César", "Catalyze"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
